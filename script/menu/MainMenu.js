@@ -99,20 +99,20 @@ function generateMainMenuButtons(inGame){
     );
 
     buttons = buttons.concat([
-        new Button
-        (
-            // PLAYER vs PLAYER
-            sprites.twoPlayersButton, 
-            new Vector2(200,dev+200),
-            function(){
-                AI_ON = false;
-                Game.mainMenu.active = false;
-                GAME_STOPPED = false;
-                setTimeout(Game.startNewGame,200);
-                sounds.fadeOut(Game.mainMenu.sound);
-            },
-            sprites.twoPlayersButtonHover
-        ),
+        // new Button
+        // (
+        //     // PLAYER vs PLAYER
+        //     sprites.twoPlayersButton, 
+        //     new Vector2(200,dev+200),
+        //     function(){
+        //         AI_ON = false;
+        //         Game.mainMenu.active = false;
+        //         GAME_STOPPED = false;
+        //         setTimeout(Game.startNewGame,200);
+        //         sounds.fadeOut(Game.mainMenu.sound);
+        //     },
+        //     sprites.twoPlayersButtonHover
+        // ),
         new Button
         (
             // PLAYER vs COMPUTER
